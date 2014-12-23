@@ -23,9 +23,7 @@ SECRET_KEY = '!$el@p5=%i4t)v#*uml9(-hi!$*1+c2emzx%3)2uov4=ta3q#r'
 DEBUG = True
 
 TEMPLATE_DEBUG = True
-
 TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
-
 TEMPLATE_DIRS = [
     TEMPLATE_PATH,
 ]
@@ -87,4 +85,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
+STATIC_PATH = os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    STATIC_PATH,
+)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

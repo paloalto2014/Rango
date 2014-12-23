@@ -15,5 +15,4 @@ def index(request):
 
 
 def about(request):
-    return HttpResponse("About page"
-                        "<br/> <a href='/rango/'>Index</a>")
+    return render(request, 'rango/about.html')
